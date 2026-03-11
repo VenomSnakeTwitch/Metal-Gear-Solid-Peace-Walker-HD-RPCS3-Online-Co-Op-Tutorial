@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MISSION SETUP: MGS PW HD // RPCS3 & RPCN</title>
-    
+
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
@@ -23,7 +23,6 @@
 
         body {
             font-family: 'Share Tech Mono', monospace;
-            /* Hintergrundbild Konfiguration */
             background-color: #000;
             background-image: url('background.png');
             background-size: cover;
@@ -33,7 +32,6 @@
             padding-bottom: 50px;
         }
 
-        /* Scanline CRT Effekt */
         body::before {
             content: " "; display: block; position: fixed; top: 0; left: 0; bottom: 0; right: 0;
             background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), 
@@ -65,7 +63,16 @@
 
         .important-note { background: rgba(0, 255, 65, 0.1); border: 1px solid var(--mgs-green); padding: 15px; margin: 15px 0; color: var(--mgs-green); font-weight: bold; }
 
-        .download-box { border: 2px dashed var(--mgs-green); padding: 30px; text-align: center; margin: 20px 0; background: rgba(0, 255, 65, 0.05); }
+        /* Download-Box jetzt mit einheitlichem schwarzen Hintergrund-Panel */
+        .download-box { 
+            border: 2px dashed var(--mgs-green); 
+            padding: 30px; 
+            text-align: center; 
+            margin: 20px 0; 
+            background: var(--mgs-panel); /* Angepasst für Konsistenz */
+            box-shadow: 0 0 15px rgba(0, 255, 65, 0.1);
+        }
+        
         .download-btn { display: inline-block; padding: 15px 40px; background: var(--mgs-green); color: #000; text-decoration: none; font-weight: bold; text-transform: uppercase; transition: 0.3s; border: none; cursor: pointer; }
         .download-btn:hover { background: #fff; box-shadow: 0 0 20px var(--mgs-green); }
 
@@ -82,7 +89,7 @@
     </header>
 
     <div class="section-divider"><span>Phase 01: Infiltration (Download)</span></div>
-    
+
     <div class="download-box">
         <p style="margin-bottom: 20px;">Lade dir das vorkonfigurierte Paket herunter:</p>
         <a href="https://drive.google.com/file/d/18FRmeCkhkc6evn75H_1z3-pKl0RaFlg2/view?usp=sharing" class="download-btn" target="_blank">Download RPCS3 + Game</a>
