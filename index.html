@@ -32,7 +32,6 @@
             padding-bottom: 50px;
         }
 
-        /* Scanline CRT Effekt */
         body::before {
             content: " "; display: block; position: fixed; top: 0; left: 0; bottom: 0; right: 0;
             background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), 
@@ -47,13 +46,7 @@
             background: var(--mgs-panel); margin-bottom: 30px; box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
         }
 
-        .main-logo {
-            max-width: 300px;
-            height: auto;
-            margin-bottom: 15px;
-            filter: drop-shadow(0 0 5px var(--mgs-green));
-        }
-
+        .main-logo { max-width: 300px; height: auto; margin-bottom: 15px; filter: drop-shadow(0 0 5px var(--mgs-green)); }
         h1 { font-family: 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 3px; color: var(--mgs-green); font-size: 1.8rem; }
         .subtitle { color: var(--text-highlight); font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; }
 
@@ -64,7 +57,6 @@
         .step-number { position: absolute; top: -15px; left: 20px; background: var(--mgs-green); color: #000; padding: 5px 15px; font-weight: bold; transform: skewX(-15deg); }
 
         h2 { color: var(--mgs-green); text-transform: uppercase; margin: 10px 0 20px; border-bottom: 1px solid var(--mgs-border); padding-bottom: 10px; font-size: 1.1rem; }
-
         .image-container { border: 1px solid var(--mgs-green-dim); background: #000; padding: 10px; margin: 20px 0; text-align: center; }
         .image-container img { max-width: 100%; height: auto; border: 1px solid #222; }
 
@@ -89,9 +81,8 @@
     <div class="section-divider"><span>Phase 01: Infiltration (Download)</span></div>
     
     <div class="download-box">
-        <p style="margin-bottom: 20px;">Beginne die Mission mit dem Download des Gesamtpakets (Emulator & Spiel):</p>
+        <p style="margin-bottom: 20px;">Lade dir das vorkonfigurierte Paket herunter (Emulator & Spiel):</p>
         <a href="https://drive.google.com/file/d/18FRmeCkhkc6evn75H_1z3-pKl0RaFlg2/view?usp=sharing" class="download-btn" target="_blank">Download RPCS3 + Game</a>
-        <p style="margin-top: 20px; font-size: 0.8rem; color: var(--mgs-green-dim);">Entpacke die Dateien, bevor du mit Phase 02 fortfährst.</p>
     </div>
 
     <div class="section-divider"><span>Phase 02: RPCN Account Setup</span></div>
@@ -103,28 +94,21 @@
     <div class="step"><div class="step-number">05</div><h2>Passwort-Setup</h2><div class="image-container"><img src="RPCN config5.png"></div></div>
     <div class="step"><div class="step-number">06</div><h2>E-Mail Bestätigung</h2><div class="image-container"><img src="RPCN config6.png"></div></div>
     <div class="step"><div class="step-number">07</div><h2>Netzwerk-Parameter</h2><div class="image-container"><img src="RPCN config7.png"></div></div>
-    <div class="step"><div class="step-number">08</div><h2>Validierung</h2><div class="image-container"><img src="RPCN config8.png"></div></div>
 
     <div class="section-divider"><span>Phase 03: Network Configuration</span></div>
 
     <div class="step">
-        <div class="step-number">09</div>
-        <h2>Netzwerk-Status (Ausgangslage)</h2>
-        <p>Prüfe im Emulator (Rechtsklick auf das Spiel -> Change Custom Configuration) den Reiter "Network".</p>
-        <div class="image-container">
-            <img src="Game config1.png" alt="Disconnected Status">
-        </div>
+        <div class="step-number">08</div>
+        <h2>Netzwerk-Status (Check)</h2>
+        <p>Prüfe deine Einstellungen (Rechtsklick auf das Spiel -> Change Custom Configuration).</p>
+        <div class="image-container"><img src="Game config1.png" alt="Disconnected"></div>
     </div>
 
     <div class="step">
-        <div class="step-number">10</div>
-        <h2>Netzwerk-Aktivierung (Korrekt)</h2>
-        <div class="important-note">
-            Ändere den Network Status auf "Connected" und den PSN Status auf "RPCN".
-        </div>
-        <div class="image-container">
-            <img src="Game config2.png" alt="Connected Status">
-        </div>
+        <div class="step-number">09</div>
+        <h2>Netzwerk-Aktivierung</h2>
+        <div class="important-note">Setze Status auf "Connected" und PSN auf "RPCN".</div>
+        <div class="image-container"><img src="Game config2.png" alt="Connected"></div>
     </div>
 
     <footer>
