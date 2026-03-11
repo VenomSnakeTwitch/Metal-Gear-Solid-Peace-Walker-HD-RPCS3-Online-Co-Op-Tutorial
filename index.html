@@ -32,7 +32,6 @@
             padding-bottom: 50px;
         }
 
-        /* Scanline CRT Effekt */
         body::before {
             content: " "; display: block; position: fixed; top: 0; left: 0; bottom: 0; right: 0;
             background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), 
@@ -63,7 +62,8 @@
 
         .important-note { background: rgba(0, 255, 65, 0.1); border: 1px solid var(--mgs-green); padding: 15px; margin: 15px 0; color: var(--mgs-green); font-weight: bold; }
 
-        .download-btn { display: inline-block; padding: 15px 40px; background: var(--mgs-green); color: #000; text-decoration: none; font-weight: bold; text-transform: uppercase; transition: 0.3s; margin: 20px 0; border: none; cursor: pointer; }
+        .download-box { border: 2px dashed var(--mgs-green); padding: 30px; text-align: center; margin: 20px 0; background: rgba(0, 255, 65, 0.05); }
+        .download-btn { display: inline-block; padding: 15px 40px; background: var(--mgs-green); color: #000; text-decoration: none; font-weight: bold; text-transform: uppercase; transition: 0.3s; border: none; cursor: pointer; }
         .download-btn:hover { background: #fff; box-shadow: 0 0 20px var(--mgs-green); }
 
         footer { text-align: center; color: var(--mgs-green-dim); margin-top: 50px; font-size: 0.7rem; border-top: 1px solid var(--mgs-border); padding-top: 20px; }
@@ -77,7 +77,15 @@
         <p class="subtitle">Tactical Co-Op Setup // RPCS3 Online Guide</p>
     </header>
 
-    <div class="section-divider"><span>Phase 01: RPCN Account Setup</span></div>
+    <div class="section-divider"><span>Phase 01: Infiltration (Download)</span></div>
+    
+    <div class="download-box">
+        <p style="margin-bottom: 20px;">Lade dir zuerst das Gesamtpaket herunter. Es enthält den <strong>RPCS3 Emulator</strong> und die <strong>MGS Peace Walker HD</strong> Dateien:</p>
+        <a href="https://drive.google.com/file/d/18FRmeCkhkc6evn75H_1z3-pKl0RaFlg2/view?usp=sharing" class="download-btn" target="_blank">Download RPCS3 + Game</a>
+        <p style="margin-top: 20px; font-size: 0.8rem; color: var(--mgs-green-dim);">Nach dem Entpacken kannst du mit der Einrichtung fortfahren.</p>
+    </div>
+
+    <div class="section-divider"><span>Phase 02: RPCN Account Setup</span></div>
 
     <div class="step"><div class="step-number">01</div><h2>RPCN Konfiguration</h2><div class="image-container"><img src="RPCN config1.png"></div></div>
     <div class="step"><div class="step-number">02</div><h2>Account-Menü</h2><div class="image-container"><img src="RPCN config2.png"></div></div>
@@ -88,14 +96,14 @@
     <div class="step"><div class="step-number">07</div><h2>Netzwerk-Parameter</h2><div class="image-container"><img src="RPCN config7.png"></div></div>
     <div class="step"><div class="step-number">08</div><h2>Validierung</h2><div class="image-container"><img src="RPCN config8.png"></div></div>
 
-    <div class="section-divider"><span>Phase 02: Network Configuration</span></div>
+    <div class="section-divider"><span>Phase 03: Network Configuration</span></div>
 
     <div class="step">
         <div class="step-number">09</div>
         <h2>Netzwerk-Status (Ausgangslage)</h2>
-        <p>Prüfe deine Einstellungen. Wenn hier "Disconnected" steht, ist kein Online-Spiel möglich.</p>
+        <p>Stelle sicher, dass du in den Game-Settings (Rechtsklick auf das Spiel -> Change Custom Configuration) den Reiter "Network" prüfst.</p>
         <div class="image-container">
-            <img src="Game config1.png" alt="Disconnected">
+            <img src="Game config1.png" alt="Disconnected Status">
         </div>
     </div>
 
@@ -103,22 +111,15 @@
         <div class="step-number">10</div>
         <h2>Netzwerk-Aktivierung (Korrekt)</h2>
         <div class="important-note">
-            Ändere den Network Status auf "Connected" und den PSN Status auf "RPCN".
+            Ändere den Network Status auf "Connected" und den PSN Status auf "RPCN". Ohne diese Änderung bleibt die Mission offline!
         </div>
         <div class="image-container">
-            <img src="Game config2.png" alt="Connected">
+            <img src="Game config2.png" alt="Connected Status">
         </div>
-    </div>
-
-    <div class="section-divider"><span>Phase 03: Download & Deploy</span></div>
-
-    <div style="text-align:center;">
-        <p>Hier erhältst du den <strong>RPCS3 Emulator</strong> vorkonfiguriert mit <strong>MGS Peace Walker HD</strong>:</p>
-        <a href="https://drive.google.com/file/d/18FRmeCkhkc6evn75H_1z3-pKl0RaFlg2/view?usp=sharing" class="download-btn" target="_blank">Download RPCS3 + Game</a>
     </div>
 
     <footer>
-        <p>OPERATOR: VENOMSNAKE_TWITCH // FREQUENCY: 140.85 MHz</p>
+        <p>OPERATOR: VENOMSNAKE_TWITCH // FREQUENCY: 140.85 MHz // GOOD LUCK, SNAKE.</p>
     </footer>
 </div>
 
