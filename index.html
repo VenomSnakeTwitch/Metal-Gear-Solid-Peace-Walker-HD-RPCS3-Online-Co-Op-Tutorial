@@ -32,7 +32,6 @@
             padding-bottom: 50px;
         }
 
-        /* Scanline Effekt */
         body::before {
             content: " "; display: block; position: fixed; top: 0; left: 0; bottom: 0; right: 0;
             background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), 
@@ -61,6 +60,8 @@
         .image-container { border: 1px solid var(--mgs-green-dim); background: #000; padding: 10px; margin: 20px 0; text-align: center; }
         .image-container img { max-width: 100%; height: auto; border: 1px solid #222; }
 
+        .important-note { background: rgba(0, 255, 65, 0.1); border: 1px solid var(--mgs-green); padding: 15px; margin: 15px 0; color: var(--mgs-green); font-weight: bold; }
+
         .download-btn { display: inline-block; padding: 15px 40px; background: var(--mgs-green); color: #000; text-decoration: none; font-weight: bold; text-transform: uppercase; transition: 0.3s; margin: 20px 0; border: none; cursor: pointer; }
         .download-btn:hover { background: #fff; box-shadow: 0 0 20px var(--mgs-green); }
 
@@ -75,70 +76,37 @@
         <p class="subtitle">Tactical Co-Op Setup // RPCS3 Online Guide</p>
     </header>
 
-    <div class="section-divider"><span>Phase 01: RPCN Network Setup</span></div>
+    <div class="section-divider"><span>Phase 01: RPCN Account Setup</span></div>
 
-    <div class="step">
-        <div class="step-number">01</div>
-        <h2>RPCN Konfiguration</h2>
-        <p>Öffne RPCS3 und wähle den Reiter RPCN aus.</p>
-        <div class="image-container"><img src="RPCN config1.png" alt="RPCN Config 1"></div>
-    </div>
+    <div class="step"><div class="step-number">01</div><h2>RPCN Konfiguration</h2><div class="image-container"><img src="RPCN config1.png"></div></div>
+    <div class="step"><div class="step-number">02</div><h2>Account-Menü</h2><div class="image-container"><img src="RPCN config2.png"></div></div>
+    <div class="step"><div class="step-number">03</div><h2>Account Erstellung</h2><div class="image-container"><img src="RPCN config3.png"></div></div>
+    <div class="step"><div class="step-number">04</div><h2>Username-Wahl</h2><div class="image-container"><img src="RPCN config4.png"></div></div>
+    <div class="step"><div class="step-number">05</div><h2>Passwort-Setup</h2><div class="image-container"><img src="RPCN config5.png"></div></div>
+    <div class="step"><div class="step-number">06</div><h2>E-Mail Bestätigung</h2><div class="image-container"><img src="RPCN config6.png"></div></div>
+    <div class="step"><div class="step-number">07</div><h2>Netzwerk-Parameter</h2><div class="image-container"><img src="RPCN config7.png"></div></div>
+    <div class="step"><div class="step-number">08</div><h2>Validierung</h2><div class="image-container"><img src="RPCN config8.png"></div></div>
 
-    <div class="step">
-        <div class="step-number">02</div>
-        <h2>Account-Menü</h2>
-        <div class="image-container"><img src="RPCN config2.png" alt="RPCN Config 2"></div>
-    </div>
-
-    <div class="step">
-        <div class="step-number">03</div>
-        <h2>Account Erstellung</h2>
-        <div class="image-container"><img src="RPCN config3.png" alt="RPCN Config 3"></div>
-    </div>
-
-    <div class="step">
-        <div class="step-number">04</div>
-        <h2>Username-Wahl</h2>
-        <div class="image-container"><img src="RPCN config4.png" alt="RPCN Config 4"></div>
-    </div>
-
-    <div class="step">
-        <div class="step-number">05</div>
-        <h2>Passwort-Setup</h2>
-        <div class="image-container"><img src="RPCN config5.png" alt="RPCN Config 5"></div>
-    </div>
-
-    <div class="step">
-        <div class="step-number">06</div>
-        <h2>E-Mail Bestätigung</h2>
-        <div class="image-container"><img src="RPCN config6.png" alt="RPCN Config 6"></div>
-    </div>
-
-    <div class="step">
-        <div class="step-number">07</div>
-        <h2>Netzwerk-Parameter</h2>
-        <div class="image-container"><img src="RPCN config7.png" alt="RPCN Config 7"></div>
-    </div>
-
-    <div class="step">
-        <div class="step-number">08</div>
-        <h2>Validierung</h2>
-        <div class="image-container"><img src="RPCN config8.png" alt="RPCN Config 8"></div>
-    </div>
-
-    <div class="section-divider"><span>Phase 02: Game Specific Setup</span></div>
+    <div class="section-divider"><span>Phase 02: Network Configuration</span></div>
 
     <div class="step">
         <div class="step-number">09</div>
-        <h2>Spieleinstellungen</h2>
-        <div class="image-container"><img src="Game config1.png" alt="Game Config 1"></div>
+        <h2>Netzwerk-Status (Fehlerhaft)</h2>
+        <p>Prüfe deine Einstellungen. Wenn hier alles auf "Disconnected" steht, ist kein Online-Spiel möglich.</p>
+        <div class="image-container">
+            <img src="Game config1.png" alt="Disconnected">
+        </div>
     </div>
 
     <div class="step">
         <div class="step-number">10</div>
-        <h2>Stabilität (SPURS)</h2>
-        <p>Limitiere die SPURS Threads auf 3 oder 5 für stabiles Online-Spiel.</p>
-        <div class="image-container"><img src="Game config2.png" alt="Game Config 2"></div>
+        <h2>Netzwerk-Aktivierung (Korrekt)</h2>
+        <div class="important-note">
+            Ändere den Network Status auf "Connected" und den PSN Status auf "RPCN", um die Online-Funktionen freizuschalten.
+        </div>
+        <div class="image-container">
+            <img src="Game config2.png" alt="Connected">
+        </div>
     </div>
 
     <div class="section-divider"><span>Phase 03: Data Access</span></div>
