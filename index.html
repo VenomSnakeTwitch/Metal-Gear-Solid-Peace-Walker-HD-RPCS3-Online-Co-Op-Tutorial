@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MISSION SETUP: MGS PW HD // RPCS3 & RPCN</title>
     
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
     <style>
@@ -30,7 +32,7 @@
             padding-bottom: 50px;
         }
 
-        /* CRT Overlay Scanlines */
+        /* Scanline Effekt */
         body::before {
             content: " "; display: block; position: fixed; top: 0; left: 0; bottom: 0; right: 0;
             background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), 
@@ -45,23 +47,21 @@
             background: var(--mgs-panel); margin-bottom: 30px; box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
         }
 
-        h1 { font-family: 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 3px; color: var(--mgs-green); font-size: 2rem; }
-        .subtitle { color: var(--text-highlight); font-size: 0.8rem; letter-spacing: 2px; }
+        h1 { font-family: 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 3px; color: var(--mgs-green); font-size: 1.8rem; }
+        .subtitle { color: var(--text-highlight); font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; }
 
         .section-divider { border-top: 2px solid var(--mgs-green); margin: 60px 0 30px; position: relative; }
-        .section-divider span { position: absolute; top: -15px; background: var(--mgs-bg); padding: 0 15px; color: var(--mgs-green); font-weight: bold; }
+        .section-divider span { position: absolute; top: -15px; background: var(--mgs-bg); padding: 0 15px; color: var(--mgs-green); font-weight: bold; text-transform: uppercase; }
 
         .step { background: var(--mgs-panel); border: 1px solid var(--mgs-border); padding: 25px; margin-bottom: 25px; position: relative; }
         .step-number { position: absolute; top: -15px; left: 20px; background: var(--mgs-green); color: #000; padding: 5px 15px; font-weight: bold; transform: skewX(-15deg); }
 
-        h2 { color: var(--mgs-green); text-transform: uppercase; margin: 10px 0 20px; border-bottom: 1px solid var(--mgs-border); padding-bottom: 10px; font-size: 1.2rem; }
+        h2 { color: var(--mgs-green); text-transform: uppercase; margin: 10px 0 20px; border-bottom: 1px solid var(--mgs-border); padding-bottom: 10px; font-size: 1.1rem; }
 
         .image-container { border: 1px solid var(--mgs-green-dim); background: #000; padding: 10px; margin: 20px 0; text-align: center; }
-        .image-container img { max-width: 100%; height: auto; border: 1px solid #222; box-shadow: 0 0 10px rgba(0,255,65,0.1); }
+        .image-container img { max-width: 100%; height: auto; border: 1px solid #222; }
 
-        .info-box { background: rgba(0, 255, 65, 0.05); border-left: 4px solid var(--mgs-green); padding: 15px; margin: 15px 0; font-size: 0.9rem; }
-        
-        .download-btn { display: inline-block; padding: 15px 40px; background: var(--mgs-green); color: #000; text-decoration: none; font-weight: bold; text-transform: uppercase; transition: 0.3s; margin: 20px 0; }
+        .download-btn { display: inline-block; padding: 15px 40px; background: var(--mgs-green); color: #000; text-decoration: none; font-weight: bold; text-transform: uppercase; transition: 0.3s; margin: 20px 0; border: none; cursor: pointer; }
         .download-btn:hover { background: #fff; box-shadow: 0 0 20px var(--mgs-green); }
 
         footer { text-align: center; color: var(--mgs-green-dim); margin-top: 50px; font-size: 0.7rem; border-top: 1px solid var(--mgs-border); padding-top: 20px; }
@@ -72,92 +72,83 @@
 <div class="main-container">
     <header>
         <h1>MISSION LOG: PEACE WALKER HD</h1>
-        <p class="subtitle">TACTICAL CO-OP SETUP // RPCS3 & RPCN</p>
+        <p class="subtitle">Tactical Co-Op Setup // RPCS3 Online Guide</p>
     </header>
 
-    <div class="section-divider"><span>PHASE 01: RPCN ACCOUNT SETUP</span></div>
+    <div class="section-divider"><span>Phase 01: RPCN Network Setup</span></div>
 
     <div class="step">
         <div class="step-number">01</div>
-        <h2>RPCN Konfiguration öffnen</h2>
-        <p>Navigiere in RPCS3 zu <span style="color:var(--mgs-green)">Configuration</span> und wähle <span style="color:var(--mgs-green)">RPCN</span>.</p>
-        <div class="image-container"><img src="RPCN config1.png" alt="RPCN config 1"></div>
+        <h2>RPCN Konfiguration</h2>
+        <p>Öffne RPCS3 und wähle den Reiter RPCN aus.</p>
+        <div class="image-container"><img src="RPCN config1.png" alt="RPCN Config 1"></div>
     </div>
 
     <div class="step">
         <div class="step-number">02</div>
-        <h2>Account Menü</h2>
-        <p>Klicke auf den <span style="color:var(--mgs-green)">Account</span> Button, um die Benutzerverwaltung zu öffnen.</p>
-        <div class="image-container"><img src="RPCN config2.png" alt="RPCN config 2"></div>
+        <h2>Account-Menü</h2>
+        <div class="image-container"><img src="RPCN config2.png" alt="RPCN Config 2"></div>
     </div>
 
     <div class="step">
         <div class="step-number">03</div>
-        <h2>Neuen Account erstellen</h2>
-        <p>Wähle <span style="color:var(--mgs-green)">Create Account</span> aus dem Menü.</p>
-        <div class="image-container"><img src="RPCN config3.png" alt="RPCN config 3"></div>
+        <h2>Account Erstellung</h2>
+        <div class="image-container"><img src="RPCN config3.png" alt="RPCN Config 3"></div>
     </div>
 
     <div class="step">
         <div class="step-number">04</div>
-        <h2>Username festlegen</h2>
-        <p>Wähle einen Namen zwischen 3 und 16 Zeichen (nur a-z, 0-9 und Bindestriche).</p>
-        <div class="image-container"><img src="RPCN config4.png" alt="RPCN config 4"></div>
+        <h2>Username-Wahl</h2>
+        <div class="image-container"><img src="RPCN config4.png" alt="RPCN Config 4"></div>
     </div>
 
     <div class="step">
         <div class="step-number">05</div>
-        <h2>Passwort vergeben</h2>
-        <p>Erstelle ein sicheres Passwort für deinen RPCN Zugang.</p>
-        <div class="image-container"><img src="RPCN config5.png" alt="RPCN config 5"></div>
+        <h2>Passwort-Setup</h2>
+        <div class="image-container"><img src="RPCN config5.png" alt="RPCN Config 5"></div>
     </div>
 
     <div class="step">
         <div class="step-number">06</div>
-        <h2>E-Mail Verifizierung</h2>
-        <p>Gib deine E-Mail Adresse ein, um den erforderlichen Token zu erhalten.</p>
-        <div class="image-container"><img src="RPCN config6.png" alt="RPCN config 6"></div>
+        <h2>E-Mail Bestätigung</h2>
+        <div class="image-container"><img src="RPCN config6.png" alt="RPCN Config 6"></div>
     </div>
 
     <div class="step">
         <div class="step-number">07</div>
-        <h2>Netzwerk-Status aktivieren</h2>
-        <p>Stelle den <span style="color:var(--mgs-green)">Network Status</span> auf <strong>Connected</strong> und den PSN Status auf <strong>RPCN</strong>.</p>
-        <div class="image-container"><img src="RPCN config7.png" alt="RPCN config 7"></div>
+        <h2>Netzwerk-Parameter</h2>
+        <div class="image-container"><img src="RPCN config7.png" alt="RPCN Config 7"></div>
     </div>
 
     <div class="step">
         <div class="step-number">08</div>
-        <h2>Account Management</h2>
-        <p>Hier kannst du deinen Account editieren oder den Token bei Bedarf erneut senden lassen.</p>
-        <div class="image-container"><img src="RPCN config8.png" alt="RPCN config 8"></div>
+        <h2>Validierung</h2>
+        <div class="image-container"><img src="RPCN config8.png" alt="RPCN Config 8"></div>
     </div>
 
-    <div class="section-divider"><span>PHASE 02: GAME CONFIGURATION</span></div>
+    <div class="section-divider"><span>Phase 02: Game Specific Setup</span></div>
 
     <div class="step">
         <div class="step-number">09</div>
-        <h2>Spieleinstellungen (Teil 1)</h2>
-        <p>Klicke mit der rechten Maustaste auf das Spiel und wähle <span style="color:var(--mgs-green)">Change Custom Configuration</span>. Prüfe die Netzwerk-Tabs.</p>
-        <div class="image-container"><img src="Game config1.png" alt="Game config 1"></div>
+        <h2>Spieleinstellungen</h2>
+        <div class="image-container"><img src="Game config1.png" alt="Game Config 1"></div>
     </div>
 
     <div class="step">
         <div class="step-number">10</div>
-        <h2>Spieleinstellungen (Teil 2)</h2>
-        <p>Stelle sicher, dass die SPURS Threads (Advanced Tab) auf <strong>3</strong> oder <strong>5</strong> limitiert sind für maximale Stabilität im Koop.</p>
-        <div class="image-container"><img src="Game config2.png" alt="Game config 2"></div>
+        <h2>Stabilität (SPURS)</h2>
+        <p>Limitiere die SPURS Threads auf 3 oder 5 für stabiles Online-Spiel.</p>
+        <div class="image-container"><img src="Game config2.png" alt="Game Config 2"></div>
     </div>
 
-    <div class="section-divider"><span>PHASE 03: MISSION DATA</span></div>
+    <div class="section-divider"><span>Phase 03: Data Access</span></div>
 
     <div style="text-align:center;">
-        <p>Klicke unten, um die notwendigen Dateien vom Drive zu laden:</p>
-        <a href="https://drive.google.com/file/d/18FRmeCkhkc6evn75H_1z3-pKl0RaFlg2/view?usp=sharing" class="btn download-btn" target="_blank">ACCESS GOOGLE DRIVE</a>
+        <a href="https://drive.google.com/file/d/18FRmeCkhkc6evn75H_1z3-pKl0RaFlg2/view?usp=sharing" class="download-btn" target="_blank">Mission Data Access</a>
     </div>
 
     <footer>
-        <p>OPERATOR: VENOMSNAKE_TWITCH // FREQUENCY: 140.85 MHz // DATA CLASSIFIED</p>
+        <p>OPERATOR: VENOMSNAKE_TWITCH // FREQUENCY: 140.85 MHz</p>
     </footer>
 </div>
 
